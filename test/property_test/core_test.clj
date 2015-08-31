@@ -55,7 +55,4 @@
                             time-range-gen
                             broadcast-sort-gen]))))
 
-(gen/sample broadcast-field-query-gen)
-(gen/sample full-broadcast-query-gen 30)
-
-(gen/sample (gen/shrink-2 (gen/shrink-2 (gen/shrink-2 full-broadcast-query-gen))))
+(gen/sample full-broadcast-query-gen)
